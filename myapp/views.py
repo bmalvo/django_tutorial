@@ -1,5 +1,6 @@
 from django.shortcuts import render  # type:ignore
 from django.http import HttpResponse  # type:ignore
+# from myapp.template import 'hello.html'
 
 
 def hello(request):
@@ -8,4 +9,4 @@ def hello(request):
 
 
 def helo(request):
-    return render(request, 'myapp/template/hello.html', {})
+    return render(request, 'templates/hello.html', {})
