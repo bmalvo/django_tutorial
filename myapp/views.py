@@ -8,5 +8,10 @@ def hello(request):
     return HttpResponse(text)
 
 
+def morning(request):
+    text = '<h1>Welcome in the morning!</h1>'
+    return HttpResponse(text)
+
+
 def helo(request):
     return render(request, 'templates/hello.html', {})

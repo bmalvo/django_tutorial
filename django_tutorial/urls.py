@@ -19,5 +19,6 @@ from myapp.views import hello
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', hello, name='hello'),
     path('myapp/', include('myapp.url')),
 ]
